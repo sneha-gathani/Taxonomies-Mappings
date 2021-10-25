@@ -1,0 +1,326 @@
+{
+	"shneiderman1996-sequences":[
+		"overview, zoom, filter, details-on-demand"
+	],
+
+	"shneiderman1996-description":{
+		"overview":"gain an overview of a collection",
+		"zoom":"zoom in on items of interest",
+		"filter":"filter out uninteresting items",
+		"details-on-demand":"select an item or group and get details when needed"
+	},
+
+	"brehmermunzner2013-shneiderman1996-sequences":{
+		"encode":"null",
+		"select":"details-on-demand",
+		"navigate":"zoom",
+		"arrange":"null",
+		"change":"null",
+		"filter":"filter",
+		"aggregate":"overview",
+		"annotate":"null",
+		"import":"null",
+		"derive":"details-on-demand",
+		"record":"null",
+		"null":"null"
+	},
+
+	"brehmermunzner2013-shneiderman1996-mapping":{
+		"expression":"(aggregate)*(navigate|filter)+(select|derive)+"
+	},
+
+	"yi2007-shneiderman1996-sequences":{
+		"select":"details-on-demand",
+		"explore":"zoom",
+		"reconfigure":"null",
+		"encode":"null",
+		"abstractorelaborate":"overview",
+		"filter":"filter",
+		"connect":"null",
+		"undo":"null",
+		"redo":"null",
+		"settings":"null",
+		"retrieve":"details-on-demand",
+		"null":"null"
+	},
+
+	"yi2007-shneiderman1996-mapping":{
+		"expression":"(abstractorelaborate)*(explore|filter)+(select|retrieve)+"
+	},
+
+	"amar2005-shneiderman1996-sequences":{
+		"retrieve-value":"details-on-demand",
+		"filter":"filter",
+		"compute-derived-value":"null",
+		"find extremum":"null",
+		"sort":"null",
+		"determine-range":"zoom",
+		"find-anomalies":"null",
+		"cluster":"null",
+		"correlate":"null",
+		"characterize-distribution":"null",
+		"null":"null"
+	},
+
+	"amar2005-shneiderman1996-mapping":{
+		"expression":"(determine-range|filter)+(retrieve-value)+"
+	},
+
+	"gotzzhou2009-shneiderman1996-sequences":{
+		"filter":"filter",
+		"inspect":"details-on-demand",
+		"query":"details-on-demand",
+		"restore":"null",
+		"brush":"filter",
+		"change-metaphor":"details-on-demand",
+		"change-range":"zoom",
+		"merge":"null",
+		"sort":"null",
+		"split":"null",
+		"annotate":"null",
+		"bookmark":"null",
+		"create":"null",
+		"modify":"null",
+		"remove":"null",
+		"delete":"null",
+		"edit":"null",
+		"redo":"null",
+		"revisit":"null",
+		"undo":"null",
+		"null":"null"
+	},
+
+	"gotzzhou2009-shneiderman1996-mapping":{
+		"expression":"(change-range|filter|brush)+(inspect|query|change-metaphor)+"
+
+	},
+
+
+	"gotzwen2009-sequences":{
+		"[inspectsame, inspectsame, inspectsame, inspectsame]":"scan",
+		"[filter, query, filter, query]":"flip",
+		"[sort, sort, sort]":"swap",
+		"[inspectdiff, inspectdiff, inspectdiff]":"drill-down"
+	},
+
+	"gotzwen2009-description":{
+		"scan":"user iteratively performs inspect-like actions over a series of visual objects that represent similar data objects which is why we consider inspecting on the same dimensions (inspectsame)",
+		"flip":"user iteratively changes filter constraints along particular dimension to alter set of data on display within a visualization",
+		"swap":"user repeatedly rearranges the order in which dimensions of data are presented within a visualization",
+		"drill-down":"user repeatedly filters down along orthogonal dimensions of the dataset which is why we consider inspecting on different dimensions (inspectdiff)"
+	},
+
+	"brehmermunzner2013-gotzwen2009-sequences":{
+		"encode":"null",
+		"select":"inspect",
+		"navigate":"null",
+		"arrange":"sort",
+		"change":"null",
+		"filter":"filter",
+		"aggregate":"query",
+		"annotate":"null",
+		"import":"null",
+		"derive":"query",
+		"record":"null",
+		"null":"null"
+	},
+
+	"brehmermunzner2013-gotzwen2009-mapping":{
+		"expression":{"(inspectsame)+":"scan",
+					  "(filter|aggregate)+":"flip",
+					  "(arrange)+":"swap",
+					  "(inspectdiff)+":"drill-down"
+					}
+	},
+
+	"yi2007-gotzwen2009-sequences":{
+		"select":"inspect",
+		"explore":"inspect",
+		"reconfigure":"sort",
+		"encode":"null",
+		"abstractorelaborate":"null",
+		"filter":"filter",
+		"connect":"null",
+		"undoorredo":"null",
+		"retrieve":"query",
+		"null":"null"
+	},
+
+	"yi2007-gotzwen2009-mapping":{
+		"expression":{"(inspectsame)+":"scan",
+					  "(filter|retrieve)+":"flip",
+					  "(reconfigure)+":"swap",
+					  "(inspectdiff)+":"drill-down"
+					}
+	},
+
+	"amar2005-gotzwen2009-sequences":{
+		"retrieve-value":"query",
+		"filter":"filter",
+		"compute-derived-value":"null",
+		"find-extremum":"null",
+		"sort":"sort",
+		"determine-range":"null",
+		"find-anomalies":"null",
+		"cluster":"null",
+		"correlate":"null",
+		"characterize-distribution":"null",
+		"null":"null"
+	},
+
+	"amar2005-gotzwen2009-mapping":{
+		"expression":{"(filter|retrieve-value)+":"flip",
+			"(sort)+":"swap",
+			"null1":"scan",
+			"null":"drill-down"}
+	},
+
+	"gotzzhou2009-gotzwen2009-sequences":{
+		"filter":"filter",
+		"inspect":"inspect",
+		"query":"query",
+		"restore":"null",
+		"brush":"filter",
+		"change-metaphor":"inspect",
+		"change-range":"null",
+		"merge":"null",
+		"sort":"sort",
+		"split":"null",
+		"annotate":"null",
+		"bookmark":"null",
+		"create":"null",
+		"modify":"null",
+		"remove":"null",
+		"delete":"null",
+		"edit":"null",
+		"redo":"null",
+		"revisit":"null",
+		"undo":"null",
+		"null":"null"
+	},
+
+	"gotzzhou2009-gotzwen2009-mapping":{
+		"expression":{"(inspectsame|change-metaphorsame)+":"scan",
+					  "(filter|brush|query)+":"flip",
+					  "(sort)+":"swap",
+					  "(inspectdiff|change-metaphordiff)+":"drill-down"
+					}
+	},
+
+
+	"guo2015-sequences":{
+		"[explore, elaborate, elaborate, elaborate]":"sampling",
+		"[explore, elaborate, elaborate]":"sampling",
+		"[retrieve, elaborate, elaborate]":"locating",
+		"[elaborate, retrieve, elaborate]":"locating",
+		"[elaborate, elaborate, elaborate]":"elaborating",
+		"[reconfigure, explore, elaborate]":"orienting"
+	},
+
+	"guo2015-description":{
+		"sampling":"analyst explores and adds new entities that might be of interest onto the active view, and elaborates to gather detailed information about the entities",
+		"locating":"analyst retrieves entities that match specific criteria and elaborates to examine the details of the entities",
+		"elaborating":"analyst performs a sequence of elaborate actions to gather detailed information about one or more entities",
+		"orienting":"analyst reconfigures the view to look at the dataset in a different way and further explores the dataset and elaborates on the details of some entities"
+	},
+
+	"brehmermunzner2013-guo2015-sequences":{
+		"encode":"null",
+		"select":"inspect",
+		"navigate":"explore",
+		"arrange":"reconfigure",
+		"change":"null",
+		"filter":"null",
+		"aggregate":"retrieve",
+		"annotate":"null",
+		"import":"null",
+		"derive":"retrieve",
+		"record":"null",
+		"null":"null"
+	},
+
+	"brehmermunzner2013-guo2015-mapping":{
+		"expression":{"":"sampling",
+					  "":"locating",
+					  "":"elaborating",
+					  "":"orienting"
+					}
+	},
+
+	"yi2007-guo2015-sequences":{
+		"select":"null",
+		"explore":"explore",
+		"reconfigure":"reconfigure",
+		"encode":"null",
+		"abstractorelaborate":"elaborate",
+		"filter":"null",
+		"connect":"null",
+		"undo":"null",
+		"redo":"null",
+		"settings":"null",
+		"retrieve":"retrieve",
+		"null":"null"
+	},
+	
+	"yi2007-guo2015-mapping":{
+		"expression":{"(explore)+(abstractorelaborate){2,}":"sampling",
+					  "(retrieve|abstractorelaborate)+(abstractorelaborate)+":"locating",
+					  "(abstractorelaborate)+":"elaborating",
+					  "(reconfigure)+(explore)+(abstractorelaborate)+":"orienting"
+					}
+	},
+
+	"amar2005-guo2015-sequences":{
+		"retrieve-value":"retrieve",
+		"filter":"null",
+		"compute-derived-value":"null",
+		"find extremum":"null",
+		"sort":"reconfigure",
+		"determine-range":"explore",
+		"find-anomalies":"null",
+		"cluster":"null",
+		"correlate":"null",
+		"characterize-distribution":"null",
+		"null":"null"
+	},
+
+	"amar2005-guo2015-mapping":{
+		"expression":{"":"sampling",
+					  "":"locating",
+					  "":"elaborating",
+					  "":"orienting"
+					}
+	},
+
+	"gotzzhou2009-guo2015-sequences":{
+		"filter":"null",
+		"inspect":"retrieve",
+		"query":"retrieve",
+		"restore":"null",
+		"brush":"null",
+		"change-metaphor":"elaborate",
+		"change-range":"explore",
+		"merge":"null",
+		"sort":"reconfigure",
+		"split":"null",
+		"annotate":"null",
+		"bookmark":"null",
+		"create":"null",
+		"modify":"null",
+		"remove":"null",
+		"delete":"null",
+		"edit":"null",
+		"redo":"null",
+		"revisit":"null",
+		"undo":"null",
+		"null":"null"
+	},
+
+	"gotzzhou2009-guo2015-mapping":{
+		"expression":{"(change-range)+(change-metaphor){2,}":"sampling",
+					  "(inspect|query|change-metaphor)+(change-metaphor)+":"locating",
+					  "(change-metaphor)+":"elaborating",
+					  "(sort)+(change-range)+(change-metaphor)+":"orienting"
+					}
+	}	
+}

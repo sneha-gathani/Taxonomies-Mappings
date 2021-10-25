@@ -1,0 +1,402 @@
+p13,1379391390687,clear,undefined,undefined
+p13,1379391390669,brush,bar-4,4-15-15-0_
+p13,1379391392586,brush,bar-4,4-19-19-0_
+p13,1379391394904,clear,undefined,undefined
+p13,1379391395037,brush,bar-2,2-0-0-0_
+p13,1379391396870,clear,undefined,undefined
+p13,1379391397137,brush,bar-2,2-1-1-0_
+p13,1379391397788,brush,bar-2,2-0-0-0_
+p13,1379391401188,clear,undefined,undefined
+p13,1379391402372,repaintBg,log scale,true
+p13,1379391402373,repaintFg,log scale,true
+p13,1379391403221,clear,undefined,undefined
+p13,1379391403304,brush,bar-2,2-0-0-0_
+p13,1379391410739,brush,bar-2,2-1-1-0_
+p13,1379391411423,brush,bar-2,2-2-2-0_
+p13,1379391412072,brush,bar-2,2-1-1-0_
+p13,1379391412623,brush,bar-2,2-2-2-0_
+p13,1379391413273,brush,bar-2,2-1-1-0_
+p13,1379391414051,range select,bar-2,2-0-0-0_
+p13,1379391416031,range select,bar-2,2-0-1-0_
+p13,1379391416617,range select,bar-2,2-0-2-0_
+p13,1379391417833,range select,bar-2,2-0-0-0_
+p13,1379391422439,range select,bar-2,2-1-1-0_
+p13,1379391424170,range select,bar-2,2-0-0-0_
+p13,1379391425751,range select,bar-2,2-0-1-0_
+p13,1379391429182,range select,bar-2,2-0-0-0_
+p13,1379391430917,range select,bar-2,2-0-1-0_
+p13,1379391431551,range select,bar-2,2-0-2-0_
+p13,1379391433366,range select,bar-2,2-0-1-0_
+p13,1379391434337,range select,bar-2,2-0-1-0_
+p13,1379391435316,range select,bar-2,2-0-2-0_
+p13,1379391437667,range select,bar-2,2-0-1-0_
+p13,1379391438217,range select,bar-2,2-0-0-0_
+p13,1379391439186,range select,bar-2,2-0-2-0_
+p13,1379391441301,range select,bar-2,2-0-3-0_
+p13,1379391442655,range select,bar-2,2-0-4-0_
+p13,1379391443287,range select,bar-2,2-0-5-0_
+p13,1379391444635,range select,bar-2,2-0-4-0_
+p13,1379391446172,range select,bar-2,2-0-3-0_
+p13,1379391453322,range select,bar-2,2-0-4-0_
+p13,1379391454672,range select,bar-2,2-0-5-0_
+p13,1379391455672,range select,bar-2,2-0-6-0_
+p13,1379391456570,range select,bar-2,2-0-7-0_
+p13,1379391457557,range select,bar-2,2-0-8-0_
+p13,1379391459006,range select,bar-2,2-0-9-0_
+p13,1379391461556,range select,bar-2,2-0-10-0_
+p13,1379391469988,range select,bar-2,2-0-12-0_
+p13,1379391470624,range select,bar-2,2-0-11-0_
+p13,1379391472639,range select,bar-2,2-0-12-0_
+p13,1379391474023,range select,bar-2,2-0-13-0_
+p13,1379391477290,range select,bar-2,2-0-12-0_
+p13,1379391478573,range select,bar-2,2-0-13-0_
+p13,1379391484140,range select,bar-2,2-0-14-0_
+p13,1379391485974,range select,bar-2,2-0-13-0_
+p13,1379391487144,range select,bar-2,2-0-14-0_
+p13,1379391488808,range select,bar-2,2-0-15-0_
+p13,1379391490175,range select,bar-2,2-0-16-0_
+p13,1379391497779,range select,bar-2,2-0-17-0_
+p13,1379391499060,range select,bar-2,2-0-18-0_
+p13,1379391505013,range select,bar-2,2-0-19-0_
+p13,1379391506627,range select,bar-2,2-0-20-0_
+p13,1379391508448,range select,bar-2,2-0-21-0_
+p13,1379391509718,range select,bar-2,2-21-21-0_
+p13,1379391519296,range select,bar-2,2-19-21-0_
+p13,1379391520549,range select,bar-2,2-20-21-0_
+p13,1379391521079,range select,bar-2,2-21-21-0_
+p13,1379391523617,range select,bar-2,2-20-21-0_
+p13,1379391524817,range select,bar-2,2-19-21-0_
+p13,1379391525381,range select,bar-2,2-18-21-0_
+p13,1379391526900,range select,bar-2,2-19-21-0_
+p13,1379391528417,range select,bar-2,2-18-21-0_
+p13,1379391529631,range select,bar-2,2-19-21-0_
+p13,1379391532117,range select,bar-2,2-18-21-0_
+p13,1379391534601,range select,bar-2,2-17-21-0_
+p13,1379391535166,range select,bar-2,2-16-21-0_
+p13,1379391536333,range select,bar-2,2-15-21-0_
+p13,1379391539066,range select,bar-2,2-14-21-0_
+p13,1379391542052,range select,bar-2,2-13-21-0_
+p13,1379391543350,range select,bar-2,2-12-21-0_
+p13,1379391544284,range select,bar-2,2-11-21-0_
+p13,1379391544970,range select,bar-2,2-10-21-0_
+p13,1379391546036,range select,bar-2,2-8-21-0_
+p13,1379391546967,range select,bar-2,2-7-21-0_
+p13,1379391547934,range select,bar-2,2-5-21-0_
+p13,1379391548851,range select,bar-2,2-4-21-0_
+p13,1379391551037,range select,bar-2,2-5-21-0_
+p13,1379391552787,range select,bar-2,2-4-21-0_
+p13,1379391555137,range select,bar-2,2-3-21-0_
+p13,1379391558556,range select,bar-2,2-2-21-0_
+p13,1379391559206,range select,bar-2,2-1-21-0_
+p13,1379391561905,range select,bar-2,2-2-21-0_
+p13,1379391563020,range select,bar-2,2-0-21-0_
+p13,1379391565257,clear,undefined,undefined
+p13,1379391566264,clear,undefined,undefined
+p13,1379391566698,brush,bar-2,2-17-17-0_
+p13,1379391567663,clear,undefined,undefined
+p13,1379391568513,brush,bar-4,4-0-0-0_
+p13,1379391569026,range select,bar-4,4-0-0-0_
+p13,1379391577490,adjustView,scatterplot-0-1,undefined
+p13,1379391577238,pan,scatterplot-0-1,-52,-58
+p13,1379391581442,adjustView,scatterplot-0-1,undefined
+p13,1379391581225,pan,scatterplot-0-1,23,28
+p13,1379391596042,repaintBg,log scale,false
+p13,1379391596042,repaintFg,log scale,false
+p13,1379391649300,repaintBg,log scale,true
+p13,1379391649300,repaintFg,log scale,true
+p13,1379391652577,repaintBg,log scale,false
+p13,1379391652578,repaintFg,log scale,false
+p13,1379391660027,range select,bar-4,4-1-1-0_
+p13,1379391662497,range select,bar-4,4-14-14-0_
+p13,1379391664681,repaintBg,log scale,true
+p13,1379391664681,repaintFg,log scale,true
+p13,1379391666946,range select,bar-4,4-15-15-0_
+p13,1379391667954,range select,bar-4,4-22-22-0_
+p13,1379391669706,range select,bar-4,4-28-28-0_
+p13,1379391671002,range select,bar-4,4-27-27-0_
+p13,1379391672737,range select,bar-4,4-26-26-0_
+p13,1379391674218,range select,bar-4,4-27-27-0_
+p13,1379391679010,range select,bar-4,4-26-26-0_
+p13,1379391680489,range select,bar-4,4-27-27-0_
+p13,1379391693193,range select,bar-4,4-26-26-0_
+p13,1379391694506,range select,bar-4,4-25-25-0_
+p13,1379391695426,range select,bar-4,4-24-24-0_
+p13,1379391696730,range select,bar-4,4-23-23-0_
+p13,1379391697858,range select,bar-4,4-22-22-0_
+p13,1379391699017,range select,bar-4,4-21-21-0_
+p13,1379391700426,range select,bar-4,4-20-20-0_
+p13,1379391702937,repaintBg,log scale,false
+p13,1379391702937,repaintFg,log scale,false
+p13,1379391704705,repaintBg,log scale,true
+p13,1379391704706,repaintFg,log scale,true
+p13,1379391706513,range select,bar-4,4-19-19-0_
+p13,1379391708161,range select,bar-4,4-18-18-0_
+p13,1379391709737,repaintBg,log scale,false
+p13,1379391709737,repaintFg,log scale,false
+p13,1379391711130,range select,bar-4,4-0-0-0_
+p13,1379391712474,range select,bar-4,4-1-1-0_
+p13,1379391713905,range select,bar-4,4-2-2-0_
+p13,1379391715370,range select,bar-4,4-3-3-0_
+p13,1379391717586,range select,bar-4,4-4-4-0_
+p13,1379391719161,range select,bar-4,4-5-5-0_
+p13,1379391721241,range select,bar-4,4-6-6-0_
+p13,1379391723393,range select,bar-4,4-7-7-0_
+p13,1379391726313,range select,bar-4,4-0-0-0_
+p13,1379391752554,clear,undefined,undefined
+p13,1379391756299,clear,undefined,undefined
+p13,1379391756276,brush,bar-4,4-27-27-0_
+p13,1379391771469,range select,scatterplot-0-1,0-86-91-0_1-88-94-0_
+p13,1379391781145,zoom,scatterplot-0-1,3
+p13,1379391781916,tile cached,undefined,0-502-752-3x1-759-1011-3x4-0-28-0
+p13,1379391782046,tile cached,undefined,0-753-1003-3x1-506-758-3x4-0-28-0
+p13,1379391782144,tile cached,undefined,0-502-752-3x1-506-758-3x4-0-28-0
+p13,1379391782229,tile cached,undefined,0-753-1003-3x1-759-1011-3x4-0-28-0
+p13,1379391782257,tile cached,undefined,0-753-1003-3x1-506-758-3x2-0-21-0
+p13,1379391782257,tile cached,undefined,0-502-752-3x1-759-1011-3x2-0-21-0
+p13,1379391782258,tile cached,undefined,0-502-752-3x1-506-758-3x2-0-21-0
+p13,1379391782258,tile cached,undefined,0-753-1003-3x1-759-1011-3x2-0-21-0
+p13,1379391782258,tile cached,undefined,0-502-752-3x1-759-1011-3x3-0-11-0
+p13,1379391782258,tile cached,undefined,0-502-752-3x1-506-758-3x3-0-11-0
+p13,1379391782258,tile cached,undefined,0-753-1003-3x1-759-1011-3x3-0-11-0
+p13,1379391782259,tile cached,undefined,0-1255-1505-4x1-1518-1770-4x4-0-28-0
+p13,1379391782258,tile cached,undefined,0-753-1003-3x1-506-758-3x3-0-11-0
+p13,1379391782259,tile cached,undefined,0-1255-1505-4x1-1771-2023-4x4-0-28-0
+p13,1379391782259,tile cached,undefined,0-1255-1505-4x1-1265-1517-4x4-0-28-0
+p13,1379391782259,tile cached,undefined,0-1506-1756-4x1-1265-1517-4x4-0-28-0
+p13,1379391782259,tile cached,undefined,0-1757-2007-4x1-1265-1517-4x4-0-28-0
+p13,1379391782260,tile cached,undefined,0-1506-1756-4x1-1518-1770-4x4-0-28-0
+p13,1379391782260,tile cached,undefined,0-1506-1756-4x1-1771-2023-4x4-0-28-0
+p13,1379391782260,tile cached,undefined,0-1757-2007-4x1-1518-1770-4x4-0-28-0
+p13,1379391782260,tile cached,undefined,0-1757-2007-4x1-1771-2023-4x4-0-28-0
+p13,1379391784387,adjustView,scatterplot-0-1,undefined
+p13,1379391784303,pan,scatterplot-0-1,-73,-11
+p13,1379391784876,tile cached,undefined,0-1004-1254-4x1-1265-1517-4x4-0-28-0
+p13,1379391784877,tile cached,undefined,0-1004-1254-4x1-1012-1264-4x4-0-28-0
+p13,1379391784882,tile cached,undefined,0-1004-1254-4x1-1518-1770-4x4-0-28-0
+p13,1379391784883,tile cached,undefined,0-1255-1505-4x1-1012-1264-4x4-0-28-0
+p13,1379391784956,tile cached,undefined,0-1506-1756-4x1-1012-1264-4x4-0-28-0
+p13,1379391784957,tile cached,undefined,0-1757-2007-4x1-1012-1264-4x4-0-28-0
+p13,1379391786482,adjustView,scatterplot-0-1,undefined
+p13,1379391786286,pan,scatterplot-0-1,26,-43
+p13,1379391787874,zoom,scatterplot-0-1,4
+p13,1379391788687,tile cached,undefined,0-1506-1756-4x1-1265-1517-4x2-0-21-0
+p13,1379391788694,tile cached,undefined,0-1255-1505-4x1-1518-1770-4x2-0-21-0
+p13,1379391788702,tile cached,undefined,0-1255-1505-4x1-1265-1517-4x2-0-21-0
+p13,1379391788704,tile cached,undefined,0-1255-1505-4x1-1518-1770-4x3-0-11-0
+p13,1379391788705,tile cached,undefined,0-1506-1756-4x1-1265-1517-4x3-0-11-0
+p13,1379391788711,tile cached,undefined,0-1255-1505-4x1-1265-1517-4x3-0-11-0
+p13,1379391788711,tile cached,undefined,0-1506-1756-4x1-1518-1770-4x2-0-21-0
+p13,1379391788721,tile cached,undefined,0-1506-1756-4x1-1518-1770-4x3-0-11-0
+p13,1379391788732,tile cached,undefined,0-1506-1756-4x1-1265-1517-4x4-0-28-0
+p13,1379391788738,tile cached,undefined,0-1255-1505-4x1-1518-1770-4x4-0-28-0
+p13,1379391788739,tile cached,undefined,0-1506-1756-4x1-1518-1770-4x4-0-28-0
+p13,1379391788739,tile cached,undefined,0-1255-1505-4x1-1265-1517-4x4-0-28-0
+p13,1379391793187,range select,scatterplot-0-1,0-1409-1414-4_1-1435-1440-4_
+p13,1379391803471,adjustView,scatterplot-0-1,undefined
+p13,1379391803470,pan,scatterplot-0-1,0,0
+p13,1379391817657,range select,scatterplot-0-1,0-1401-1422-4_1-1431-1449-4_
+p13,1379391818232,range select,scatterplot-0-1,0-1401-1422-4_1-1430-1449-4_
+p13,1379391883042,zoom,scatterplot-0-1,0
+p13,1379391903470,range select,scatterplot-0-1,0-0-217-0_1-92-217-0_
+p13,1379391916610,adjustView,scatterplot-0-1,undefined
+p13,1379391916389,pan,scatterplot-0-1,-54,-43
+p13,1379391918856,pan,scatterplot-0-1,24,22
+p13,1379391919618,adjustView,scatterplot-0-1,undefined
+p13,1379391925174,range select,scatterplot-0-1,0--30-216-0_1-90-210-0_
+p13,1379391931354,repaintBg,log scale,true
+p13,1379391931354,repaintFg,log scale,true
+p13,1379391932073,repaintBg,log scale,false
+p13,1379391932074,repaintFg,log scale,false
+p13,1379391937696,adjustView,scatterplot-0-1,undefined
+p13,1379391937592,pan,scatterplot-0-1,2,0
+p13,1379391939978,adjustView,scatterplot-0-1,undefined
+p13,1379391939930,pan,scatterplot-0-1,8,0
+p13,1379391945929,range select,scatterplot-0-1,0--17-231-0_1-90-223-0_
+p13,1379391954254,adjustView,scatterplot-0-1,undefined
+p13,1379391954253,pan,scatterplot-0-1,0,0
+p13,1379391959298,range select,scatterplot-0-1,0--20-210-0_1-90-212-0_
+p13,1379391965017,clear,undefined,undefined
+p13,1379391970714,range select,scatterplot-0-1,0-0-193-0_1-94-225-0_
+p13,1379391975589,adjustView,scatterplot-0-1,undefined
+p13,1379391975588,pan,scatterplot-0-1,0,0
+p13,1379391978866,range select,scatterplot-0-1,0--14-185-0_1-93-224-0_
+p13,1379391988584,range select,scatterplot-0-1,0--20-200-0_1-91-201-0_
+p13,1379391993673,clear,undefined,undefined
+p13,1379392009649,adjustView,scatterplot-0-1,undefined
+p13,1379392009751,clear,undefined,undefined
+p13,1379392009570,pan,scatterplot-0-1,68,67
+p13,1379392066232,clear,undefined,undefined
+p13,1379392066657,clear,undefined,undefined
+p13,1379392067201,range select,bar-4,4-0-0-0_
+p13,1379392072689,range select,bar-4,4-1-1-0_
+p13,1379392075498,range select,bar-4,4-0-0-0_
+p13,1379392077714,range select,bar-4,4-1-1-0_
+p13,1379392079858,range select,bar-4,4-2-2-0_
+p13,1379392083594,range select,bar-4,4-1-1-0_
+p13,1379392085193,range select,bar-4,4-0-0-0_
+p13,1379392094458,adjustView,scatterplot-0-1,undefined
+p13,1379392094334,pan,scatterplot-0-1,-63,-60
+p13,1379392161050,range select,bar-4,4-1-1-0_
+p13,1379392163913,range select,bar-4,4-0-0-0_
+p13,1379392165250,range select,bar-4,4-1-1-0_
+p13,1379392169298,range select,bar-4,4-0-0-0_
+p13,1379392171162,range select,bar-4,4-1-1-0_
+p13,1379392183682,range select,bar-4,4-2-2-0_
+p13,1379392204018,range select,bar-4,4-0-0-0_
+p13,1379392205826,range select,bar-4,4-1-1-0_
+p13,1379392209226,range select,bar-4,4-3-3-0_
+p13,1379392212066,range select,bar-4,4-1-1-0_
+p13,1379392213874,range select,bar-4,4-3-3-0_
+p13,1379392216354,range select,bar-4,4-1-1-0_
+p13,1379392218618,range select,bar-4,4-3-3-0_
+p13,1379392224098,range select,bar-4,4-1-1-0_
+p13,1379392226217,range select,bar-4,4-3-3-0_
+p13,1379392235338,range select,bar-4,4-9-9-0_
+p13,1379392238666,range select,bar-4,4-6-6-0_
+p13,1379392239305,range select,bar-4,4-7-7-0_
+p13,1379392240785,range select,bar-4,4-0-0-0_
+p13,1379392242598,range select,bar-4,4-6-6-0_
+p13,1379392245843,range select,bar-4,4-0-6-0_
+p13,1379392246714,range select,bar-4,4-0-0-0_
+p13,1379392249390,range select,bar-4,4-0-6-0_
+p13,1379392297209,range select,bar-4,4-7-7-0_
+p13,1379392299732,range select,bar-4,4-7-29-0_
+p13,1379392310113,range select,bar-4,4-9-9-0_
+p13,1379392310809,range select,bar-4,4-8-8-0_
+p13,1379392313193,range select,bar-4,4-9-9-0_
+p13,1379392315298,range select,bar-4,4-8-8-0_
+p13,1379392316066,range select,bar-4,4-7-7-0_
+p13,1379392322530,range select,bar-4,4-11-11-0_
+p13,1379392325338,range select,bar-4,4-11-29-0_
+p13,1379392368154,range select,bar-4,4-17-17-0_
+p13,1379392373057,range select,bar-4,4-7-7-0_
+p13,1379392374121,range select,bar-4,4-6-6-0_
+p13,1379392375310,range select,bar-4,4-0-6-0_
+p13,1379392398898,range select,bar-4,4-10-10-0_
+p13,1379392401430,range select,bar-4,4-10-29-0_
+p13,1379392409570,range select,bar-4,4-6-6-0_
+p13,1379392411166,range select,bar-4,4-0-6-0_
+p13,1379392433806,adjustView,scatterplot-0-1,undefined
+p13,1379392433805,pan,scatterplot-0-1,0,0
+p13,1379392436330,clear,undefined,undefined
+p13,1379392439874,adjustView,scatterplot-0-1,undefined
+p13,1379392439453,pan,scatterplot-0-1,117,-78
+p13,1379392440039,clear,undefined,undefined
+p13,1379392443034,adjustView,scatterplot-0-1,undefined
+p13,1379392443135,clear,undefined,undefined
+p13,1379392442970,pan,scatterplot-0-1,-148,114
+p13,1379392446129,adjustView,scatterplot-0-1,undefined
+p13,1379392446231,clear,undefined,undefined
+p13,1379392445937,pan,scatterplot-0-1,45,-74
+p13,1379392449438,range select,scatterplot-0-1,0-100-217-0_1--12-81-0_
+p13,1379392454098,repaintBg,log scale,true
+p13,1379392454098,repaintFg,log scale,true
+p13,1379392456401,repaintBg,log scale,false
+p13,1379392456401,repaintFg,log scale,false
+p13,1379392458383,adjustView,scatterplot-0-1,undefined
+p13,1379392458383,pan,scatterplot-0-1,0,0
+p13,1379392461373,range select,scatterplot-0-1,0-149-228-0_1--30-98-0_
+p13,1379392464826,repaintBg,log scale,true
+p13,1379392464826,repaintFg,log scale,true
+p13,1379392466809,repaintBg,log scale,false
+p13,1379392466809,repaintFg,log scale,false
+p13,1379392468983,adjustView,scatterplot-0-1,undefined
+p13,1379392468983,pan,scatterplot-0-1,0,0
+p13,1379392472492,range select,scatterplot-0-1,0-104-194-0_1-1-85-0_
+p13,1379392475113,repaintBg,log scale,true
+p13,1379392475114,repaintFg,log scale,true
+p13,1379392497465,repaintBg,log scale,false
+p13,1379392497466,repaintFg,log scale,false
+p13,1379392501828,adjustView,scatterplot-0-1,undefined
+p13,1379392501828,pan,scatterplot-0-1,0,0
+p13,1379392506609,adjustView,scatterplot-0-1,undefined
+p13,1379392506430,pan,scatterplot-0-1,69,-62
+p13,1379392508634,adjustView,scatterplot-0-1,undefined
+p13,1379392508530,pan,scatterplot-0-1,-104,106
+p13,1379392511797,range select,scatterplot-0-1,0--15-69-0_1-94-161-0_
+p13,1379392516577,repaintBg,log scale,true
+p13,1379392516577,repaintFg,log scale,true
+p13,1379392518609,repaintBg,log scale,false
+p13,1379392518609,repaintFg,log scale,false
+p13,1379392523216,range select,scatterplot-0-1,0--7-87-0_1-97-160-0_
+p13,1379392525753,repaintBg,log scale,true
+p13,1379392525753,repaintFg,log scale,true
+p13,1379392527113,clear,undefined,undefined
+p13,1379392529851,adjustView,scatterplot-0-1,undefined
+p13,1379392529952,clear,undefined,undefined
+p13,1379392529552,pan,scatterplot-0-1,-16,-1
+p13,1379392534254,range select,scatterplot-0-1,0--7-75-0_1-99-160-0_
+p13,1379392538369,repaintBg,log scale,false
+p13,1379392538370,repaintFg,log scale,false
+p13,1379392542558,repaintBg,log scale,true
+p13,1379392542559,repaintFg,log scale,true
+p13,1379392543879,repaintBg,log scale,false
+p13,1379392543879,repaintFg,log scale,false
+p13,1379392545197,adjustView,scatterplot-0-1,undefined
+p13,1379392545069,pan,scatterplot-0-1,-5,9
+p13,1379392548481,range select,scatterplot-0-1,0-1-1-0_1-160-160-0_
+p13,1379392550255,range select,scatterplot-0-1,0--18-1-0_1-160-167-0_
+p13,1379392569486,tile cached,undefined,2-0-21-0x3-0-11-0x4-0-28-0
+p13,1379392569783,tile cached,undefined,0-0-250-0x1-0-252-0x4-0-28-0
+p13,1379392569818,tile cached,undefined,0-0-250-1x1-0-252-1x4-0-28-0
+p13,1379392569818,tile cached,undefined,0-0-250-1x1-253-505-1x4-0-28-0
+p13,1379392569818,tile cached,undefined,0-251-501-1x1-253-505-1x4-0-28-0
+p13,1379392569819,tile cached,undefined,0-251-501-1x1-0-252-1x4-0-28-0
+p13,1379392569819,tile cached,undefined,0-0-250-0x1-0-252-0x3-0-11-0
+p13,1379392569819,tile cached,undefined,0-0-250-0x1-0-252-0x2-0-21-0
+p13,1379392569433,brush,bar-4,4-19-19-0_
+p13,1379392571402,clear,undefined,undefined
+p13,1379392578108,range select,scatterplot-0-1,0-13-67-0_1-102-150-0_
+p13,1379392581685,repaintBg,log scale,true
+p13,1379392581685,repaintFg,log scale,true
+p13,1379392614050,repaintBg,log scale,false
+p13,1379392614051,repaintFg,log scale,false
+p13,1379392616826,range select,bar-4,4-9-9-0_
+p13,1379392619034,range select,bar-4,4-10-10-0_
+p13,1379392621316,range select,bar-4,4-10-29-0_
+p13,1379392655826,clear,undefined,undefined
+p13,1379392656314,clear,undefined,undefined
+p13,1379392657362,range select,bar-2,2-21-21-0_
+p13,1379392659562,range select,bar-2,2-20-20-0_
+p13,1379392660954,range select,bar-2,2-19-19-0_
+p13,1379392662450,range select,bar-2,2-18-18-0_
+p13,1379392663466,range select,bar-2,2-17-17-0_
+p13,1379392664586,range select,bar-2,2-16-16-0_
+p13,1379392666362,range select,bar-2,2-15-15-0_
+p13,1379392667930,range select,bar-2,2-14-14-0_
+p13,1379392669522,range select,bar-2,2-13-13-0_
+p13,1379392670705,range select,bar-2,2-12-12-0_
+p13,1379392671986,range select,bar-2,2-10-10-0_
+p13,1379392673386,range select,bar-2,2-9-9-0_
+p13,1379392674713,range select,bar-2,2-8-8-0_
+p13,1379392675913,range select,bar-2,2-7-7-0_
+p13,1379392676994,range select,bar-2,2-6-6-0_
+p13,1379392679626,range select,hist-3,3-0-0-0_
+p13,1379392690610,range select,hist-3,3-1-1-0_
+p13,1379392692337,range select,hist-3,3-2-2-0_
+p13,1379392693122,range select,hist-3,3-9-9-0_
+p13,1379392694971,range select,hist-3,3-6-6-0_
+p13,1379392696849,range select,hist-3,3-7-7-0_
+p13,1379392698762,range select,hist-3,3-8-8-0_
+p13,1379392700210,range select,hist-3,3-9-9-0_
+p13,1379392711090,range select,hist-3,3-10-10-0_
+p13,1379392712130,range select,hist-3,3-11-11-0_
+p13,1379392719122,range select,hist-3,3-0-0-0_
+p13,1379392726155,range select,hist-3,3-2-2-0_
+p13,1379392727321,range select,hist-3,3-3-3-0_
+p13,1379392728330,range select,hist-3,3-5-5-0_
+p13,1379392729466,range select,hist-3,3-6-6-0_
+p13,1379392730177,range select,hist-3,3-7-7-0_
+p13,1379392731034,range select,hist-3,3-8-8-0_
+p13,1379392731914,range select,hist-3,3-9-9-0_
+p13,1379392732771,range select,hist-3,3-10-10-0_
+p13,1379392733786,range select,hist-3,3-11-11-0_
+p13,1379392735738,range select,bar-4,4-21-21-0_
+p13,1379392744386,range select,bar-4,4-6-6-0_
+p13,1379392745666,range select,bar-4,4-5-5-0_
+p13,1379392747049,range select,bar-4,4-3-3-0_
+p13,1379392748162,range select,bar-4,4-4-4-0_
+p13,1379392749875,range select,bar-4,4-11-11-0_
+p13,1379392751714,range select,bar-4,4-4-4-0_
+p13,1379392752402,range select,bar-4,4-6-6-0_
+p13,1379392758850,range select,bar-4,4-4-4-0_
