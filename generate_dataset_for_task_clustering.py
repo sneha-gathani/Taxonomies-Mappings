@@ -209,13 +209,13 @@ def process_liuheer2014():
             individual_task = df['task'] == t
             individual_task = df[individual_task].sort_values(by='timestamp', ascending=True)
             interactions = list(individual_task['interactionTypeRaw'])
-            brehmermunzner2013_interactions = []
+            gotzzhou2009_interactions = []
             for i in interactions:
-                brehmermunzner2013_interactions.append(liuHeerToGZInteraction(i))
-            brehmermunzner2013_guo2015 = convert_to_guo2015(brehmermunzner2013_interactions)
-            brehmermunzner2013_shneiderman1996 = convert_to_shneiderman1996(brehmermunzner2013_interactions)
-            brehmermunzner2013_gotzwen2009 = convert_to_gotzwen2009(brehmermunzner2013_interactions)
-            add_to_final_data("LiuHeer2014", t, i, '-', brehmermunzner2013_interactions, brehmermunzner2013_guo2015, brehmermunzner2013_shneiderman1996, brehmermunzner2013_gotzwen2009)
+                gotzzhou2009_interactions.append(liuHeerToGZInteraction(i))
+            gotzzhou2009_guo2015 = convert_to_guo2015(gotzzhou2009_interactions)
+            gotzzhou2009_shneiderman1996 = convert_to_shneiderman1996(gotzzhou2009_interactions)
+            gotzzhou2009_gotzwen2009 = convert_to_gotzwen2009(gotzzhou2009_interactions)
+            add_to_final_data("LiuHeer2014", t, i, '-', gotzzhou2009_interactions, gotzzhou2009_guo2015, gotzzhou2009_shneiderman1996, gotzzhou2009_gotzwen2009)
         
 def process_wall2020():
     path = "Provenance Datasets/Wall"
@@ -240,13 +240,13 @@ def process_wall2020():
         sortedAllLogs = sorted(temp, key = lambda ii: (ii['processed_at']))
         df = pd.DataFrame.from_dict(sortedAllLogs)
         interactions = list(df['interactionTypeRaw'])
-        brehmermunzner2013_interactions = []
+        gotzzhou2009_interactions = []
         for i in interactions:
-            brehmermunzner2013_interactions.append(wallToGZInteraction(i))
-        brehmermunzner2013_guo2015 = convert_to_guo2015(brehmermunzner2013_interactions)
-        brehmermunzner2013_shneiderman1996 = convert_to_shneiderman1996(brehmermunzner2013_interactions)
-        brehmermunzner2013_gotzwen2009 = convert_to_gotzwen2009(brehmermunzner2013_interactions)
-        add_to_final_data("Wall2020", '-', p, '-', brehmermunzner2013_interactions, brehmermunzner2013_guo2015, brehmermunzner2013_shneiderman1996, brehmermunzner2013_gotzwen2009)
+            gotzzhou2009_interactions.append(wallToGZInteraction(i))
+        gotzzhou2009_guo2015 = convert_to_guo2015(gotzzhou2009_interactions)
+        gotzzhou2009_shneiderman1996 = convert_to_shneiderman1996(gotzzhou2009_interactions)
+        gotzzhou2009_gotzwen2009 = convert_to_gotzwen2009(gotzzhou2009_interactions)
+        add_to_final_data("Wall2020", '-', p, '-', gotzzhou2009_interactions, gotzzhou2009_guo2015, gotzzhou2009_shneiderman1996, gotzzhou2009_gotzwen2009)
         
 process_battleheer2019()
 process_liuheer2014()
