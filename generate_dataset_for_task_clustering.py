@@ -226,16 +226,16 @@ def convert_to_gotzwen2009(data):
 
 final_data = []
 
-def add_to_final_data(dataset, internal_dataset, user_id, task, brehmermunzner2013_interactions, brehmermunzner2013_guo2015, brehmermunzner2013_shneiderman1996, brehmermunzner2013_gotzwen2009):
+def add_to_final_data(dataset, internal_dataset, user_id, task, gotzzhou2009_interactions, gotzzhou2009_guo2015, gotzzhou2009_shneiderman1996, gotzzhou2009_gotzwen2009):
     individual_data_point = {}
     individual_data_point['dataset'] = dataset
     individual_data_point['internal_dataset'] = internal_dataset
     individual_data_point['user_id'] = user_id
     individual_data_point['task'] = task
-    individual_data_point['brehmermunzner2013_interactions'] = brehmermunzner2013_interactions
-    individual_data_point['brehmermunzner2013_guo2015'] = brehmermunzner2013_guo2015
-    individual_data_point['brehmermunzner2013_shneiderman1996'] = brehmermunzner2013_shneiderman1996
-    individual_data_point['brehmermunzner2013_gotzwen2009'] = brehmermunzner2013_gotzwen2009
+    individual_data_point['gotzzhou2009_interactions'] = gotzzhou2009_interactions
+    individual_data_point['gotzzhou2009_guo2015'] = gotzzhou2009_guo2015
+    individual_data_point['gotzzhou2009_shneiderman1996'] = gotzzhou2009_shneiderman1996
+    individual_data_point['gotzzhou2009_gotzwen2009'] = gotzzhou2009_gotzwen2009
     final_data.append(individual_data_point)
 
 def process_battleheer2019():
