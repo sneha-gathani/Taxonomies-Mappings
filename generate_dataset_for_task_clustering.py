@@ -3,6 +3,7 @@ import pandas as pd
 import json
 import re
 
+type_of_sequence_analysis = "without_interactions"
 
 interaction_mapping = json.load(open("Mappings/interaction_level.json"))
 # Gives the Gotz and Zhou taxonomy interaction category for Battle and Heer interaction logs
@@ -175,6 +176,16 @@ def get_gotz_wen_battleheer2019(data):
                 subseq.append("inspectdiff")
     return subseq
 
+def disjoint_without_interactions(data):
+    sequences = ["sampling", "locating", "elaborating", "orienting", "ISM", "scan", "flip", "swap", "drill-down"]
+    res = []
+    for i in data:
+        if i in sequences:
+            res.append(i)
+        else:
+            res.append("null")
+    return res
+
 def disjoint(data):
     interactions = ["filter", "inspect", "query", "restore", "brush", "change-metaphor", "change-range", "merge", "sort", "split", "annotate", "bookmark", "create", "modify", "remove", "delete", "edit", "redo", "revisit", "undo"]
     for i in interactions:
@@ -194,7 +205,7 @@ def get_count_battleheer2019(data, expression):
     return len(re.findall(expression, data))
 
 sequence_mapping = json.load(open("Mappings/sequence_level.json"))
-def convert_to_guo2015(data):
+def convert_to_guo2015(data, type):
     guo = []
     guo_expressions = list(sequence_mapping["gotzzhou2009-guo2015-mapping"]["expression"].keys())
     data = combine(data)
@@ -203,17 +214,21 @@ def convert_to_guo2015(data):
     combine_guo = re.sub(guo_expressions[2], ' elaborating ', combine_guo)
     combine_guo = re.sub(guo_expressions[3], ' orienting ', combine_guo)
     guo = disjoint(combine_guo)
+    if(type == 'without_interactions'):
+        guo = disjoint_without_interactions(guo)
     return guo
 
-def convert_to_shneiderman1996(data):
+def convert_to_shneiderman1996(data, type):
     shneiderman = []
     shneiderman_expressions = sequence_mapping["gotzzhou2009-shneiderman1996-mapping"]["expression"]
     data = combine(data)
     combine_shneiderman = re.sub(shneiderman_expressions, ' ISM ', data)
     shneiderman = disjoint(combine_shneiderman)
+    if(type == 'without_interactions'):
+        shneiderman = disjoint_without_interactions(shneiderman)
     return shneiderman
 
-def convert_to_gotzwen2009(data):
+def convert_to_gotzwen2009(data, type):
     gotzwen = []
     gotzwen_expressions = list(sequence_mapping["gotzzhou2009-gotzwen2009-mapping"]["expression"].keys())
     data = combine(data)
@@ -222,6 +237,8 @@ def convert_to_gotzwen2009(data):
     combine_gotzwen = re.sub(gotzwen_expressions[2], ' swap ', combine_gotzwen)
     combine_gotzwen = re.sub(gotzwen_expressions[3], ' drill-down ', combine_gotzwen)
     gotzwen = disjoint(combine_gotzwen)
+    if(type == 'without_interactions'):
+        gotzwen = disjoint_without_interactions(gotzwen)
     return gotzwen
 
 final_data = []
@@ -292,8 +309,8 @@ def process_battleheer2019():
                 gotzzhou2009_interactions = []
                 for i in interactions:
                     gotzzhou2009_interactions.append(battleHeerToGZInteraction(i))
-                gotzzhou2009_guo2015 = convert_to_guo2015(gotzzhou2009_interactions)
-                gotzzhou2009_shneiderman1996 = convert_to_shneiderman1996(gotzzhou2009_interactions)
+                gotzzhou2009_guo2015 = convert_to_guo2015(gotzzhou2009_interactions, type_of_sequence_analysis)
+                gotzzhou2009_shneiderman1996 = convert_to_shneiderman1996(gotzzhou2009_interactions, type_of_sequence_analysis)
 
                 gotzwenData = []
                 for index, row in individual_task.iterrows():
@@ -304,7 +321,7 @@ def process_battleheer2019():
                     temp['seqId'] = row['seqId']
                     gotzwenData.append(temp)
                 prep_for_gotzwen = get_gotz_wen_battleheer2019(gotzwenData)
-                gotzzhou2009_gotzwen2009 = convert_to_gotzwen2009(prep_for_gotzwen)
+                gotzzhou2009_gotzwen2009 = convert_to_gotzwen2009(prep_for_gotzwen, type_of_sequence_analysis)
                 add_to_final_data("BattleHeer2019", d, uid[0], t, gotzzhou2009_interactions, gotzzhou2009_guo2015, gotzzhou2009_shneiderman1996, gotzzhou2009_gotzwen2009)
 
 def process_liuheer2014():
@@ -391,10 +408,10 @@ def process_liuheer2014():
             gotzzhou2009_interactions = []
             for i in interactions:
                 gotzzhou2009_interactions.append(liuHeerToGZInteraction(i))
-            gotzzhou2009_guo2015 = convert_to_guo2015(gotzzhou2009_interactions)
-            gotzzhou2009_shneiderman1996 = convert_to_shneiderman1996(gotzzhou2009_interactions)
+            gotzzhou2009_guo2015 = convert_to_guo2015(gotzzhou2009_interactions, type_of_sequence_analysis)
+            gotzzhou2009_shneiderman1996 = convert_to_shneiderman1996(gotzzhou2009_interactions, type_of_sequence_analysis)
             gotzzhou2009_interactions = liuheer_to_gotzzhou2009(individual_task)
-            gotzzhou2009_gotzwen2009 = convert_to_gotzwen2009(gotzzhou2009_interactions)
+            gotzzhou2009_gotzwen2009 = convert_to_gotzwen2009(gotzzhou2009_interactions, type_of_sequence_analysis)
             add_to_final_data("LiuHeer2014", t, i, '-', gotzzhou2009_interactions, gotzzhou2009_guo2015, gotzzhou2009_shneiderman1996, gotzzhou2009_gotzwen2009)
         
 def process_wall2020():
@@ -424,10 +441,10 @@ def process_wall2020():
         gotzzhou2009_interactions = []
         for i in interactions:
             gotzzhou2009_interactions.append(wallToGZInteraction(i))
-        gotzzhou2009_guo2015 = convert_to_guo2015(gotzzhou2009_interactions)
-        gotzzhou2009_shneiderman1996 = convert_to_shneiderman1996(gotzzhou2009_interactions)
+        gotzzhou2009_guo2015 = convert_to_guo2015(gotzzhou2009_interactions, type_of_sequence_analysis)
+        gotzzhou2009_shneiderman1996 = convert_to_shneiderman1996(gotzzhou2009_interactions, type_of_sequence_analysis)
         gotzzhou2009_interactions = wall_to_gotzzhou2009(df)
-        gotzzhou2009_gotzwen2009 = convert_to_gotzwen2009(gotzzhou2009_interactions)
+        gotzzhou2009_gotzwen2009 = convert_to_gotzwen2009(gotzzhou2009_interactions, type_of_sequence_analysis)
         add_to_final_data("Wall2020", '-', p, '-', gotzzhou2009_interactions, gotzzhou2009_guo2015, gotzzhou2009_shneiderman1996, gotzzhou2009_gotzwen2009)
         
 process_battleheer2019()
@@ -435,4 +452,4 @@ process_liuheer2014()
 process_wall2020()
 df = pd.DataFrame.from_dict(final_data)
 print(len(df))
-df.to_csv('dataset_for_task_level.csv')
+df.to_csv('dataset_for_task_level_without_interactions.csv')
