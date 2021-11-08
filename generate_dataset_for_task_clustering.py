@@ -224,6 +224,7 @@ def convert_to_guo2015(data, type):
         guo = disjoint_without_interactions(guo)
     if(type == 'collapse_interactions'):
         guo = collapse(guo)
+        guo = disjoint_without_interactions(guo)
     return guo
 
 def convert_to_shneiderman1996(data, type):
@@ -236,6 +237,7 @@ def convert_to_shneiderman1996(data, type):
         shneiderman = disjoint_without_interactions(shneiderman)
     if(type == 'collapse_interactions'):
         shneiderman = collapse(shneiderman)
+        shneiderman = disjoint_without_interactions(shneiderman)
     return shneiderman
 
 def convert_to_gotzwen2009(data, type):
@@ -251,6 +253,7 @@ def convert_to_gotzwen2009(data, type):
         gotzwen = disjoint_without_interactions(gotzwen)
     if(type == 'collapse_interactions'):
         gotzwen = collapse(gotzwen)
+        gotzwen = disjoint_without_interactions(gotzwen)
     return gotzwen
 
 final_data = []
@@ -467,5 +470,4 @@ process_liuheer2014()
 process_wall2020()
 df = pd.DataFrame.from_dict(final_data)
 print(len(df))
-# print(df['gotzzhou2009_interactions'])
-df.to_csv('collapsed_interactions_data.csv')
+df.to_csv('collapsed_sequences_data.csv')
