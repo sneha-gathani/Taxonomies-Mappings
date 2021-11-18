@@ -207,6 +207,68 @@ def collapse(data):
     res = [x[0] for x in groupby(data)]
     return res
 
+def plus(data): 
+    res = []
+    i = 0
+    j = 1
+    cnt = 1
+    while(j < len(data)):
+        while(data[j] == data[i]):
+            cnt = cnt + 1
+            j = j + 1
+            if(j == len(data)):
+                break
+        if(cnt > 1):
+            temp = data[i] + '+'
+            res.append(temp)
+        else:
+            temp = data[i]
+            res.append(temp)
+        i = j
+        if(i == len(data) - 1):
+            res.append(data[i])
+        j = i + 1
+        cnt = 1
+    r = []
+    for i in res:
+        if 'null' in i:
+            continue
+        else:
+            r.append(i)
+    res = r
+    return res
+
+def numeric(data):
+    res = []
+    i = 0
+    j = 1
+    cnt = 1
+    while(j < len(data)):
+        while(data[j] == data[i]):
+            cnt = cnt + 1
+            j = j + 1
+            if(j == len(data)):
+                break
+        if(cnt > 1):
+            temp = data[i] + str(cnt)
+            res.append(temp)
+        else:
+            temp = data[i]
+            res.append(temp)
+        i = j
+        if(i == len(data) - 1):
+            res.append(data[i])
+        j = i + 1
+        cnt = 1
+    r = []
+    for i in res:
+        if 'null' in i:
+            continue
+        else:
+            r.append(i)
+    res = r
+    return res
+
 def get_count_battleheer2019(data, expression):
     return len(re.findall(expression, data))
 
@@ -227,6 +289,13 @@ def convert_to_guo2015(data, type):
         guo = disjoint_without_interactions(guo)
     return guo
 
+def remove_alternate_change_range(data):
+    d = []
+    for i in data:
+        if(i != 'change-range'):
+            d.append(i)
+    return d
+
 def convert_to_shneiderman1996(data, type):
     shneiderman = []
     shneiderman_expressions = sequence_mapping["gotzzhou2009-shneiderman1996-mapping"]["expression"]
@@ -239,6 +308,32 @@ def convert_to_shneiderman1996(data, type):
         shneiderman = collapse(shneiderman)
         shneiderman = disjoint_without_interactions(shneiderman)
     return shneiderman
+
+# data = ['mouseover', 'mouseout', 'filter', 'mouseover_from_list', 'mouseout_from_list', 'query', 'mouseover_from_list', 'happy']
+
+def remove_patterns_seen_in_raw_data(data):
+    d = []
+    i = 0
+    while(i < len(data)):
+        j = i + 1
+        if(data[i] == 'mouseover'):
+            if(data[j] == 'mouseout'):
+                i += 2
+                d.append('mouseover_mouseout')
+            else:
+                d.append(data[i])
+                i += 1
+        elif(data[i] == 'mouseover_from_list'):
+            if(data[j] == 'mouseout_from_list'):
+                i += 2
+                d.append('mouseover_from_list_mouseout_from_list')
+            else:
+                d.append(data[i])
+                i += 1
+        else:
+            d.append(data[i])
+            i += 1
+    return d
 
 def convert_to_gotzwen2009(data, type):
     gotzwen = []
@@ -258,13 +353,16 @@ def convert_to_gotzwen2009(data, type):
 
 final_data = []
 
-def add_to_final_data(dataset, internal_dataset, user_id, task, gotzzhou2009_interactions, gotzzhou2009_guo2015, gotzzhou2009_shneiderman1996, gotzzhou2009_gotzwen2009):
+def add_to_final_data(dataset, internal_dataset, user_id, task, gotzzhou2009_interactions, gotzzhou2009_collapsed_interactions, gotzzhou2009_plus_notation, gotzzhou2009_numeric_notation, gotzzhou2009_guo2015, gotzzhou2009_shneiderman1996, gotzzhou2009_gotzwen2009):
     individual_data_point = {}
     individual_data_point['dataset'] = dataset
     individual_data_point['internal_dataset'] = internal_dataset
     individual_data_point['user_id'] = user_id
     individual_data_point['task'] = task
     individual_data_point['gotzzhou2009_interactions'] = gotzzhou2009_interactions
+    individual_data_point['gotzzhou2009_collapsed_interactions'] = gotzzhou2009_collapsed_interactions
+    individual_data_point['gotzzhou2009_plus_notation'] = gotzzhou2009_plus_notation
+    individual_data_point['gotzzhou2009_numeric_notation'] = gotzzhou2009_numeric_notation
     individual_data_point['gotzzhou2009_guo2015'] = gotzzhou2009_guo2015
     individual_data_point['gotzzhou2009_shneiderman1996'] = gotzzhou2009_shneiderman1996
     individual_data_point['gotzzhou2009_gotzwen2009'] = gotzzhou2009_gotzwen2009
@@ -325,6 +423,8 @@ def process_battleheer2019():
                 for i in interactions:
                     gotzzhou2009_interactions.append(battleHeerToGZInteraction(i))
                 gotzzhou2009_collapsed_interactions = collapse(gotzzhou2009_interactions)
+                gotzzhou2009_plus_notation = plus(gotzzhou2009_interactions)
+                gotzzhou2009_numeric_notation = numeric(gotzzhou2009_interactions)
                 gotzzhou2009_guo2015 = convert_to_guo2015(gotzzhou2009_interactions, type_of_sequence_analysis)
                 gotzzhou2009_shneiderman1996 = convert_to_shneiderman1996(gotzzhou2009_interactions, type_of_sequence_analysis)
 
@@ -338,7 +438,7 @@ def process_battleheer2019():
                     gotzwenData.append(temp)
                 prep_for_gotzwen = get_gotz_wen_battleheer2019(gotzwenData)
                 gotzzhou2009_gotzwen2009 = convert_to_gotzwen2009(prep_for_gotzwen, type_of_sequence_analysis)
-                add_to_final_data("BattleHeer2019", d, uid[0], t, gotzzhou2009_collapsed_interactions, gotzzhou2009_guo2015, gotzzhou2009_shneiderman1996, gotzzhou2009_gotzwen2009)
+                add_to_final_data("BattleHeer2019", d, uid[0], t, gotzzhou2009_interactions, gotzzhou2009_collapsed_interactions, gotzzhou2009_plus_notation, gotzzhou2009_numeric_notation, gotzzhou2009_guo2015, gotzzhou2009_shneiderman1996, gotzzhou2009_gotzwen2009)
 
 def process_liuheer2014():
     path = "Provenance Datasets/Liu and Heer/triggered-evt-logs"
@@ -424,12 +524,15 @@ def process_liuheer2014():
             gotzzhou2009_interactions = []
             for i in interactions:
                 gotzzhou2009_interactions.append(liuHeerToGZInteraction(i))
+            gotzzhou2009_interactions = remove_alternate_change_range(gotzzhou2009_interactions)
             gotzzhou2009_collapsed_interactions = collapse(gotzzhou2009_interactions)
+            gotzzhou2009_plus_notation = plus(gotzzhou2009_interactions)
+            gotzzhou2009_numeric_notation = numeric(gotzzhou2009_interactions)
             gotzzhou2009_guo2015 = convert_to_guo2015(gotzzhou2009_interactions, type_of_sequence_analysis)
             gotzzhou2009_shneiderman1996 = convert_to_shneiderman1996(gotzzhou2009_interactions, type_of_sequence_analysis)
             gotzzhou2009_interactions = liuheer_to_gotzzhou2009(individual_task)
             gotzzhou2009_gotzwen2009 = convert_to_gotzwen2009(gotzzhou2009_interactions, type_of_sequence_analysis)
-            add_to_final_data("LiuHeer2014", t, i, '-', gotzzhou2009_collapsed_interactions, gotzzhou2009_guo2015, gotzzhou2009_shneiderman1996, gotzzhou2009_gotzwen2009)
+            add_to_final_data("LiuHeer2014", t, i, '-', gotzzhou2009_interactions, gotzzhou2009_collapsed_interactions, gotzzhou2009_plus_notation, gotzzhou2009_numeric_notation, gotzzhou2009_guo2015, gotzzhou2009_shneiderman1996, gotzzhou2009_gotzwen2009)
         
 def process_wall2020():
     path = "Provenance Datasets/Wall"
@@ -459,15 +562,17 @@ def process_wall2020():
         for i in interactions:
             gotzzhou2009_interactions.append(wallToGZInteraction(i))
         gotzzhou2009_collapsed_interactions = collapse(gotzzhou2009_interactions)
+        gotzzhou2009_plus_notation = plus(gotzzhou2009_interactions)
+        gotzzhou2009_numeric_notation = numeric(gotzzhou2009_interactions)
         gotzzhou2009_guo2015 = convert_to_guo2015(gotzzhou2009_interactions, type_of_sequence_analysis)
         gotzzhou2009_shneiderman1996 = convert_to_shneiderman1996(gotzzhou2009_interactions, type_of_sequence_analysis)
         gotzzhou2009_interactions = wall_to_gotzzhou2009(df)
         gotzzhou2009_gotzwen2009 = convert_to_gotzwen2009(gotzzhou2009_interactions, type_of_sequence_analysis)
-        add_to_final_data("Wall2020", '-', p, '-', gotzzhou2009_collapsed_interactions, gotzzhou2009_guo2015, gotzzhou2009_shneiderman1996, gotzzhou2009_gotzwen2009)
+        add_to_final_data("Wall2020", '-', p, '-', gotzzhou2009_interactions, gotzzhou2009_collapsed_interactions, gotzzhou2009_plus_notation, gotzzhou2009_numeric_notation, gotzzhou2009_guo2015, gotzzhou2009_shneiderman1996, gotzzhou2009_gotzwen2009)
         
-process_battleheer2019()
+# process_battleheer2019()
 process_liuheer2014()
-process_wall2020()
+# process_wall2020()
 df = pd.DataFrame.from_dict(final_data)
-print(len(df))
-df.to_csv('collapsed_sequences_data.csv')
+print(df)
+df.to_csv('liuheer.csv')
